@@ -1,0 +1,9 @@
+.attempt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.attempt-info {
+    border: solid white 1px;
+}
