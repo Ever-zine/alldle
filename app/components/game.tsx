@@ -1,27 +1,45 @@
 "use client";
 import React, { useEffect } from "react";
 import SearchBar from "./Search/searchbar";
-import Attempt from "./dle/attempt";
+import Attempts from "./dle/attempts";
 
 const Game = ({data}: {data: JSON}) => {
+    const [itemToFind, setItemToFind] = React.useState({});
     const [selectedItem, setSelectedItem] = React.useState({});
+    const [attempts, setAttempts] = React.useState([]);
 
     const handleItemSelected = (item: JSON) => {
+        setAttempts([...attempts, item]);
         setSelectedItem(item);
     }
 
+    const selectItemToFind = () => {
+        setItemToFind(data[Math.floor(Math.random() * data.length)]);
+    }
 
+    
     return (
+        <>
         <div>
             <p>Game</p>
 
-            <p>Selected item : {selectedItem && selectedItem.name}</p>
+            <button onClick={selectItemToFind}>Start new game</button>
+
+            <p>Item to find : {itemToFind && itemToFind.name}</p>
 
             <SearchBar data={data} onItemSelected={handleItemSelected} />
 
-            <Attempt item={selectedItem} />
+
+            <Attempts attempts={attempts} itemToFind={itemToFind} />
+
+            {/* <div>
+                {attempts.map((attempt: any) => (
+                    <Attempt item={attempt} />
+                ))}
+            </div> */}
 
         </div>
+        </>
     );
 }
 

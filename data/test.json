@@ -1,68 +1,35 @@
 [
     {
-        "id": 1,
-        "name": "John Doe",
-        "infos":
-        [
-            {"name": "John Doe"},
-            {"age": "25"}
-        ]
-    },
-    {
-        "id": 2,
-        "name": "Bob",
-        "infos":
-        [
-            {"name": "Bob"},
-            {"age": "21"}
-        ]
-    },
-    {
-        "id": 3,
-        "name": "Oe",
-        "infos":
-        [
-            {"name": "Oe"},
-            {"age": "23"}
-        ]
-    },
-    {
-        "id": 4,
-        "name": "Test",
-        "infos":
-        [
-            {"name": "Test"},
-            {"age": "65"}
-        ]
-    },
-    {
-        "id": 5,
-        "name": "Johnny Doe",
-        "infos":
-        [
-            {"name": "John Doe"},
-            {"age": "25"}
-        ]
-    },
-    {
-        "id": 6,
-        "name": "Jilbert Doe",
-        "infos":
-        [
-            {"name": "John Doe"},
-            {"age": "25"}
-        ]
-    },
-    {
         "id": 7,
         "name": "Joris Doe",
-        "infos":
-        [
+        "infos": [
             {"Age": "25"},
             {"Métier": "Prof"},
             {"Voiture": "Honda NSX"},
             {"Passion": "Les frites"},
             {"Guitare": "Fender Stratocaster American Ultra HSS"}
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Marie Smith",
+        "infos": [
+            {"Age": "30"},
+            {"Métier": "Ingénieur"},
+            {"Voiture": "Tesla Model S"},
+            {"Passion": "La lecture"},
+            {"Guitare": "Gibson Les Paul Standard '50s"}
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Alexandre Dupont",
+        "infos": [
+            {"Age": "40"},
+            {"Métier": "Médecin"},
+            {"Voiture": "BMW M3"},
+            {"Passion": "Le jardinage"},
+            {"Guitare": "Martin D-28"}
         ]
     }
 ]
