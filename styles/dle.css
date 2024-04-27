@@ -1,9 +1,43 @@
+.attempt-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+.attempt-header h1 {
+    width: 100px;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
 .attempt {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+    margin: 20px;
 }
 
 .attempt-info {
+    display: flex;
     border: solid white 1px;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.correct {
+    background-color: green;
+}
+
+.incorrect {
+    background: red;
+}
+
+.uncomplete {
+    background: orange;
 }
